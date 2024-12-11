@@ -1,0 +1,435 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+
+    line-height: 1.6;
+    background: #e0f7fa;
+}
+
+header {
+    background: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+.hero {
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.hero h2 {
+    font-size: 3rem;
+    animation: fadeIn 2s;
+    position: relative; 
+    top: -100px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    align-content:center;
+    position: relative; 
+    top: -100px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #0084b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.technology {
+    background: #e0f7fa;
+    font-size: 17px;
+}
+
+/* Styling for article subsections */
+.article-subsections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.article-subsection {
+    background: rgb(250, 250, 250);
+    margin: 20px;
+    padding: 20px;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.article-subsection:hover {
+    transform: scale(1.05);
+}
+
+.article-subsection img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.environment {
+    background: #dcedc8;
+}
+
+.article-card {
+    background: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+}
+
+.article-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff7f50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #ff4500;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Typing Animation */
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.hero-content h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+    position: relative;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    margin: 0 auto;
+    display: inline-block; /* Make the h2 only take the width of its content */
+}
+
+.typewriter {
+    display: inline-block; /* Make it inline-block */
+    font-size: 2.5rem; /* Adjust as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Ensures text is hidden before animation */
+    border-right: 3px solid; /* Create a "cursor" effect */
+    width: 100%; /* Full width to hold the text */
+    animation: typing 4s steps(40, end) forwards; /* Keep the final state */
+}
+
+.blinking-cursor {
+    border-right: 3px solid; /* Create a "cursor" effect */
+    animation: blink 0.75s step-end infinite; /* Blinking effect */
+}
+
+
+
+/* Adjust font size if necessary */
+.hero-content h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Arrange items in a row */
+    margin-right: 20px; /* Space between links */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li:hover {
+    background-color: #007BFF; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+nav ul li:hover a {
+    color: #fff; /* Change link color on hover */
+}
+
+/*Cloud article page css*/
+.cloud{
+    background-color: #e0f7fa;
+     h1 {
+        font-size: 2rem; /* Changes the font size */
+        color: #333; /* Sets the text color */
+        text-align: left; /* Centers the text */
+        font-weight: bold; /* Makes the text bold */
+        margin: 20px 0; /* Adds top and bottom margin */
+        letter-spacing: 1px; /* Adds spacing between letters */
+        margin-left: 200px;
+     }
+
+     h2{
+        font-size: 1.5rem; /* Changes the font size */
+        color: #333; /* Sets the text color */
+        text-align: center; /* Centers the text */
+        font-weight: bold; /* Makes the text bold */
+        margin: 20px 0; /* Adds top and bottom margin */
+        letter-spacing: 0px; /* Adds spacing between letters */
+        margin-left: 50px;
+    }
+
+     p{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 11px;
+
+    }
+    ol{
+        margin-left: 220px;
+        margin-right: 200px;
+        margin-top: 11px;
+
+
+    }
+    h3{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 11px;
+
+    }
+    h4{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 11px;
+
+    }
+    img{
+        margin-left: 200px;
+        margin-right: 400px;
+        margin-top: 11px;
+
+    }
+
+    
+}
+
+/*Emerging tech article page css*/
+.emergtech{
+    background-color: #e0f7fa;
+     h1 {
+        font-size: 2rem; /* Changes the font size */
+        color: #333; /* Sets the text color */
+        text-align: left; /* Centers the text */
+        font-weight: bold; /* Makes the text bold */
+        margin: 20px 0; /* Adds top and bottom margin */
+        letter-spacing: 1px; /* Adds spacing between letters */
+        margin-left: 200px;
+     }
+
+     h2{
+        font-size: 1.5rem; /* Changes the font size */
+        color: #333; /* Sets the text color */
+        text-align: left; /* Centers the text */
+        font-weight: bold; /* Makes the text bold */
+        margin: 20px 0; /* Adds top and bottom margin */
+        letter-spacing: 0px; /* Adds spacing between letters */
+        margin-left:200px;
+    }
+
+     p{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 11px;
+
+    }
+    ol{
+        margin-left: 220px;
+        margin-right: 200px;
+        margin-top: 11px;
+
+
+    }
+    li{
+        margin-top: 7px;
+    }
+    h3{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 11px;
+
+    }
+    h4{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 11px;
+
+    }
+    img{
+        margin-left: 200px;
+        margin-right: 400px;
+        margin-top: 11px;
+
+    }
+    /* CSS styles for the like button and comment section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.like-button {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.like-button.liked {
+    color: #e74c3c;
+    
+}
+.like-count {
+    font-size: 18px;
+    
+}
+.comment-section {
+    margin-top: 20px;
+    
+}
+.comment-section input[type="text"] {
+    width: 300px;
+    padding: 9px;
+    margin-right: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.comment-section button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+ul#commentList {
+    margin-top: 10px;
+}
+ul#commentList li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+
+    
+}
+
+/*sidebar*/
